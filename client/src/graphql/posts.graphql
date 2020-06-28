@@ -1,0 +1,11 @@
+query Posts {
+  posts {
+    subject
+    content
+  }
+}
+
+mutation AddPost($subject: String!, $content: String!) {
+  addPost(subject: $subject, content: $content)
+}
+
